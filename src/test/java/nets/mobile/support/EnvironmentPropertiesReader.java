@@ -63,28 +63,8 @@ public class EnvironmentPropertiesReader {
 		return properties.getProperty("platform");
 	}
 	
-	public boolean isRunningLocalGrid() {
-		return Boolean.valueOf(properties.getProperty("runLocalGrid"));
-	}
-	
-	public String getURL() {
-		return properties.getProperty("url");
-	}
-	
-	public String getSiteSearch() {
-		return properties.getProperty("searchSite");
-	}
-	
-	public String getAuthUsername() {
-		return properties.getProperty("authUsername");
-	}
-	
-	public String getAuthPassword() {
-		return properties.getProperty("authPassword");
-	}
-	
 	public String getUsername() {
-		return properties.getProperty("username");
+		return properties.getProperty("Username");
 	}
 	
 	public String getPassword() {
