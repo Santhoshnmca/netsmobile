@@ -13,6 +13,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 //import com.bankaudi.support.EmailReport;
 import nets.mobile.support.EnvironmentPropertiesReader;
+import nets.mobile.support.Log;
 //import com.bankaudi.support.Log;
 
 //@Listeners(EmailReport.class)
@@ -23,7 +24,6 @@ public class BaseTest {
 
 	@BeforeSuite(alwaysRun = true)
 	public void beforeSuite() {		
-		url = properties.getURL();
 		System.getProperties().put("hubHost", properties.getDeviceHost());
 		System.getProperties().put("devicePort", properties.getDevicePort());		
 	}
@@ -35,7 +35,6 @@ public class BaseTest {
 		File path = new File("./src/main/resources/APK/pia-sdk-android-release-sample-2.4.0.apk"); 
 			
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		//capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
 		capabilities.setCapability("deviceName", "AndroidSDKbuild");
 		capabilities.setCapability("platformVersion", "10.0");
 		capabilities.setCapability("platformName", "Android");
@@ -45,33 +44,14 @@ public class BaseTest {
 		capabilities.setCapability("app", path.getAbsolutePath());
 		capabilities.setCapability("appWaitActivity", "SplashActivity, SplashActivity,OtherActivity, *, *.SplashActivity");
 	
-			
-//		
-//		// Created object of DesiredCapabilities class.
-//		DesiredCapabilities capabilities = new DesiredCapabilities();
-//
-//		// Set android deviceName desired capability. Set your device name.
-//		capabilities.setCapability("deviceName", "42008156f0d61459");
-//
-//		// Set BROWSER_NAME desired capability. It's Android in our case here.
-//		capabilities.setCapability(CapabilityType.BROWSER_NAME, "Android");
-//
-//		// Set android VERSION desired capability. Set your mobile device's OS version.
-//		capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
-//
-//		// Set android platformName desired capability. It's Android in our case here.
-//		capabilities.setCapability("platformName", "Android");
-
-		
 
 		// Created object of RemoteWebDriver will all set capabilities.
 		// Set appium server address and port number in URL string.
 		// It will launch calculator app in android device.
 		try {
-			//Log.message("Navigating to Nets Login Screen..");
+			Log.message("Open to Nets Mobile App..");
 			driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
