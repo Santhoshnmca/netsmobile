@@ -4,9 +4,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.support.PageFactory;
 
-//import nets.mobile.support.Log;
-//import nets.mobile.support.WaitUtil;
-
 import io.appium.java_client.MobileDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
