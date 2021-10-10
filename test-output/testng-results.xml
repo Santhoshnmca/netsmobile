@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Nets Mobile Suite" duration-ms="18905" started-at="2021-10-10T12:48:00Z" finished-at="2021-10-10T12:48:19Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="18905" started-at="2021-10-10T12:48:00Z" finished-at="2021-10-10T12:48:19Z">
+      <class name="nets.mobile.testscripts.TestClassNative">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:nets.mobile.testscripts.TestClassNative@4cf777e8]" name="beforeSuite" is-config="true" duration-ms="6" started-at="2021-10-10T18:18:00Z" finished-at="2021-10-10T18:18:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="loginNetsAPP()[pri:0, instance:nets.mobile.testscripts.TestClassNative@4cf777e8]" name="loginNetsAPP" duration-ms="18894" started-at="2021-10-10T18:18:00Z" description="Verify Nets Mobile Native Application Functionality" finished-at="2021-10-10T18:18:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginNetsAPP -->
+      </class> <!-- nets.mobile.testscripts.TestClassNative -->
+    </test> <!-- Default test -->
+  </suite> <!-- Nets Mobile Suite -->
+</testng-results>

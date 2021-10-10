@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Nets Mobile Suite" allow-return-values="true" preserve-order="false" parallel="methods" thread-count="3" data-provider-thread-count="10">
+	<test name="Nets Mobile" preserve-order="false">				
+		<classes>	
+			<class name="nets.mobile.testscripts.TestClassNative"/>		 					 						 					
+		</classes>
+	</test>	
+</suite>

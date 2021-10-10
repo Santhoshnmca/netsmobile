@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" name="Failed suite [Nets Mobile Suite]" parallel="methods" allow-return-values="true">
+  <test name="Default test(failed)" parallel="methods">
+    <classes>
+      <class name="nets.mobile.testscripts.TestClassNative">
+        <methods>
+          <include name="beforeSuite"/>
+          <include name="loginNetsAPP"/>
+        </methods>
+      </class> <!-- nets.mobile.testscripts.TestClassNative -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Nets Mobile Suite] -->
