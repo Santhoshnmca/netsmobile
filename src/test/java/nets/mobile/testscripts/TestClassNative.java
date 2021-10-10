@@ -30,9 +30,8 @@ public class TestClassNative extends BaseTest{
 			wp.tapSignUpBtn();
 			//assertTrue(wp.verifyCheckOutImage(),"true");
 			wp.tapSettingsIcon();
-		//	Assert.assertTrue(wp.verifycustumerID(),"Failed");
-			//Log.message("<font face='Calibri' color='black'>Verifed <b>"+ wp.verifycustumerID()+"</b> is disaplayed!</font>", driver);
-
+			//Assert.assertTrue(wp.verifycustumerID(),"Failed");
+			
 			wp.tapChange();
 			wp.tapEnterValue();
 			
