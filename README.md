@@ -39,4 +39,5 @@ Running sample as is
     Open nets.mobile.testscripts.TestClassNative.java file
 	
 Maven will automatically kick start the execution of Test case we need to setup the Default testng Template xml way examples 
-in pom.xml we set ${TestNGSuite} 
+	In pom.xml we set ${TestNGSuite} 
+	Trigger the test by executing default xml file name testng_nets.xml
