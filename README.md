@@ -16,6 +16,8 @@ There are several prerequisite dependencies you should install on your machine p
     Android studio
 
     Local Appium Server running at http://127.0.0.1 , port: 4723
+    
+    Create New AVD and keep alive
 
 Eclipse users should also install:
 
